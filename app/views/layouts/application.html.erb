@@ -4,7 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>TODO</title>
+    <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+    <meta property="og:description" content="The Mozilla Developer Network (MDN) provides
+    information about Open Web technologies including HTML, CSS, and APIs for both Web sites
+    and HTML5 Apps. It also documents Mozilla products, like Firefox OS.">
+    <meta property="og:title" content="Hadley Innovation">
+    <title>Hadley Innovation</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" sizes="16x16">
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag    'application', media: 'all' %>
@@ -12,7 +19,7 @@
   <body>
     <%= yield %>
   <!-- Navigation -->
-      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <nav class="navbar navbar-fixed-top" role="navigation">
           <div class="container">
               <!-- Brand and toggle get grouped for better mobile display -->
               <div class="navbar-header">
@@ -50,17 +57,23 @@
               <div class="col-lg-12">
                 <ul class="list-inline pull-left">
                   <li>
-                    <i class="footer-fa fa fa-linkedin" aria-hidden="true"></i>
+                    <%= image_tag "facebook_F.svg", class: "media", id: "facebook" %>
                   </li>
                   <li>
-                    <i class="footer-fa fa fa-facebook" aria-hidden="true"></i>
+                    <%= image_tag "twitter_F.svg", class: "media", id: "twitter" %>
                   </li>
                   <li>
-                    <i class="footer-fa fa fa-twitter" aria-hidden="true"></i>
+                  <%= image_tag "email_F.svg", class: "media", id: "email" %>
+                  </li>
+                  <li>
+                  <%= image_tag "googleplus_F.svg", class: "media", id: "googleplus" %>
+                  </li>
+                  <li>
+                  <%= image_tag "LinkedIn.svg", class: "media", id: "linkedIn" %>
                   </li>
                 </ul>
                 <div class="bottom-line pull-right">
-                  <p>Copyright &copy; Laurianne Gerin</p>
+                  <p>Copyright &copy; 2016 Hadley Innovation - by Laurianne Gerin</p>
                 </div>
               </div>
           </div>
