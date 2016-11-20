@@ -11,4 +11,7 @@ class PagesController < ApplicationController
 
   def product
   end
+
+  def submission
+  end
 end
