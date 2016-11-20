@@ -20,6 +20,10 @@
      opacity: 0.8;
  }
 
+ p {
+   font-weight: 100;
+ }
+
  /* Landing Picutre Styles */
 
 .welcome-banner {
@@ -30,12 +34,6 @@
   background-repeat: no-repeat;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
 }
-
- /* Footer Styles */
-
- footer {
-     margin: 50px 0;
- }
 
  /* Responsive Styles */
 

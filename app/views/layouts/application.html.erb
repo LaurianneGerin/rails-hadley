@@ -19,6 +19,7 @@
   <body>
     <%= yield %>
   <!-- Navigation -->
+    <div class="filter">
       <nav class="navbar navbar-fixed-top" role="navigation">
           <div class="container">
               <!-- Brand and toggle get grouped for better mobile display -->
@@ -49,35 +50,31 @@
           </div>
           <!-- /.container -->
       </nav>
+    </div>
       <!-- Footer -->
-      <div class="container">
-        <footer>
-          <div class="row">
-            <hr>
-              <div class="col-lg-12">
-                <ul class="list-inline pull-left">
-                  <li>
-                    <%= image_tag "facebook_F.svg", class: "media", id: "facebook" %>
-                  </li>
-                  <li>
-                    <%= image_tag "twitter_F.svg", class: "media", id: "twitter" %>
-                  </li>
-                  <li>
-                  <%= image_tag "email_F.svg", class: "media", id: "email" %>
-                  </li>
-                  <li>
-                  <%= image_tag "googleplus_F.svg", class: "media", id: "googleplus" %>
-                  </li>
-                  <li>
-                  <%= image_tag "LinkedIn.svg", class: "media", id: "linkedIn" %>
-                  </li>
-                </ul>
-                <div class="bottom-line pull-right">
-                  <p>Copyright &copy; 2016 Hadley Innovation - by Laurianne Gerin</p>
-                </div>
-              </div>
+      <div class="footer">
+        <div class="footer-content">
+          <ul class="list-inline pull-left">
+            <li>
+              <%= link_to(image_tag("facebook_F.svg", :alt => "facebook"), '#')%>
+            </li>
+            <li>
+              <%= link_to(image_tag("twitter_F.svg", :alt => "twitter"), '#')%>
+            </li>
+            <li>
+              <%= link_to(image_tag("email_F.svg", :alt => "email"), '#')%>
+            </li>
+            <li>
+            <%= link_to(image_tag("googleplus_F.svg", :alt => "googleplus"), '#')%>
+            </li>
+            <li>
+            <%= link_to(image_tag("LinkedIn.svg", :alt => "LinkedIn"), '#')%>
+            </li>
+          </ul>
+          <div class="bottom-line pull-right">
+            <p>Copyright &copy; 2016 Hadley Innovation - by Laurianne Gerin</p>
           </div>
-        </footer>
+        </div>
       </div>
     <%= javascript_include_tag 'application' %>
   </body>

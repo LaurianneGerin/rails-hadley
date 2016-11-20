@@ -2,6 +2,7 @@
   // background-color: #050060;
   background: linear-gradient(rgba(5,0,96,0.70), rgba(5,0,96,0.70)), url('https://images.freecreatives.com/wp-content/uploads/2015/04/5-FREE-GEOMETRIC-POLYGONAL-BACKGROUNDS.jpg');
   color: white;
+  font-weight: 100;
 }
 
 .navbar-nav li > a {
@@ -10,4 +11,15 @@
 
 .navbar-header a {
   color: white;
+}
+
+.navbar-nav li > a:hover {
+  background-color: transparent;
+  border-bottom-style: solid;
+  border-bottom-color: #F9E9F5;
+}
+
+.navbar-brand {
+  font-weight: 400;
+  letter-spacing: 6px;
 }
