@@ -35,6 +35,15 @@
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
 }
 
+.content p {
+  text-align: justify;
+}
+
+.punchline h4 {
+  text-align: center;
+  color: #2A9EF9;
+  border-bottom: none;
+}
  /* Responsive Styles */
 
  @media(max-width:991px) {
