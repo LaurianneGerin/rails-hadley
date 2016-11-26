@@ -3,12 +3,20 @@
   color: white;
   height: 150px;
   display: flex;
-  align-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
   margin-top: 30px;
   font-weight: normal;
+}
+
+.footer-icons {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 15px;
 }
 
 .list-inline > li {
@@ -17,4 +25,13 @@
 
 .pull-left ul {
   margin-top: 25px;
+}
+
+
+.footer-icon-logo-first {
+  margin-right: 30px;
+}
+
+.footer-icon-logo {
+  margin-right: 30px;
 }

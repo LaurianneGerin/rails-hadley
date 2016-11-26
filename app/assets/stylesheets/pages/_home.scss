@@ -6,6 +6,7 @@
  body {
      height: 100%;
      font-family: 'Open-sans', sans-serif;
+     color: #050060;
  }
 
  body {
@@ -28,7 +29,7 @@
 
 .welcome-banner {
   background-image: url('welcome.png');
-  height: 60vh;
+  height: 70vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -39,9 +40,9 @@
   text-align: justify;
 }
 
-.punchline h4 {
+.punchline p {
   text-align: center;
-  color: #2A9EF9;
+  color: #050060;
   border-bottom: none;
 }
  /* Responsive Styles */
@@ -66,4 +67,8 @@
 .context {
   height: 350px;
   width: 450px;
+}
+
+.navbar-toggle .icon-bar {
+  border-bottom: solid;
 }
