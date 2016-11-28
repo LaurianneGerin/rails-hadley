@@ -16,7 +16,6 @@
   align-items: center;
   flex-direction: row;
   justify-content: center;
-  margin-top: 15px;
 }
 
 .list-inline > li {
@@ -34,4 +33,17 @@
 
 .footer-icon-logo {
   margin-right: 30px;
+}
+
+.tag {
+  color: rgba(255,255,255,0.30);
+  margin-top: 15px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.copyright {
+  color: rgba(255,255,255,0.30);
+  font-size: small;
+  margin-top: 15px;
 }

@@ -4,14 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
-    <meta property="og:description" content="The Mozilla Developer Network (MDN) provides
-    information about Open Web technologies including HTML, CSS, and APIs for both Web sites
-    and HTML5 Apps. It also documents Mozilla products, like Firefox OS.">
+    <meta property="og:image" content="TODO">
+    <meta property="og:description" content="Hadley Innovation is a scientific research company specialized in weather index insurance design">
     <meta property="og:title" content="Hadley Innovation">
     <title>Hadley Innovation</title>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /><![endif]-->
+
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag    'application', media: 'all' %>
@@ -30,7 +31,7 @@
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                   </button>
-                  <%= link_to "Hadley", root_path, class: 'navbar-brand' %>
+                  <%= link_to(image_tag("logo.png", :alt => "Home", class: "logo"), '/')%>
               </div>
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -39,7 +40,7 @@
                       <%= link_to "Description", product_path %>
                     </li>
                     <li>
-                      <%= link_to "About", about_path %>
+                      <%= link_to "Team", about_path %>
                     </li>
                     <li>
                       <%= link_to "Contact", contact_path %>
@@ -54,18 +55,21 @@
       <!-- Footer -->
       <div class="footer">
         <div class="footer-content">
+          <div class="tag">
+            <p><em>Hadley Innovation is a research company specialized in weather index insurance design.</em></p>
+          </div>
           <div class="footer-icons">
             <div class="footer-icon-logo-first">
-              <%= link_to(image_tag("facebook_F.svg", :alt => "facebook"), '#')%>
+              <%= link_to(image_tag("facebook_F.svg", :alt => "facebook"), 'https://www.facebook.com/hadleyinnovation', target: '_blank')%>
             </div>
             <div class="footer-icon-logo">
-              <%= link_to(image_tag("twitter_F.svg", :alt => "twitter"), '#')%>
+              <%= link_to(image_tag("twitter_F.svg", :alt => "twitter"), 'https://twitter.com/hadleyinno', target: '_blank')%>
             </div>
             <div class="footer-icon-logo">
-              <%= link_to(image_tag("email_F.svg", :alt => "email"), '#')%>
+              <%= link_to(image_tag("email_F.svg", :alt => "email"), 'contact')%>
             </div>
             <div class="footer-icon-logo-last">
-              <%= link_to(image_tag("LinkedIn.svg", :alt => "LinkedIn"), '#')%>
+              <%= link_to(image_tag("LinkedIn.svg", :alt => "LinkedIn"), 'https://www.linkedin.com/company/hadley-innovation', target: '_blank')%>
             </div>
           </div>
           <div class="copyright">

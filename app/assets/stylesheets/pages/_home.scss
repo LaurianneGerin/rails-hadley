@@ -4,13 +4,22 @@
  * ------------------------------------- */
  html,
  body {
-     height: 100%;
-     font-family: 'Open-sans', sans-serif;
-     color: #050060;
+    height: 100%;
+    font-family: 'Open-sans', sans-serif;
+    color: rgba(67,65,73,0.7);
  }
 
  body {
      padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+ }
+
+ body h1, h2, h3, h4 {
+   color: black;
+ }
+ .logo {
+  height: 45px;
+  margin-top: 4px;
+  margin-left: 8px;
  }
 
  .img-portfolio {
@@ -28,6 +37,10 @@
  /* Landing Picutre Styles */
 
 .welcome-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-image: url('welcome.png');
   height: 70vh;
   background-size: cover;
@@ -36,13 +49,27 @@
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
 }
 
+.welcome-banner h1 {
+  margin:0;
+  font-family: 'Julius Sans One', sans-serif;
+  color: white;
+  font-size: 80px;
+}
+
+.welcome-banner h3 {
+  margin:0;
+  font-family: 'Julius Sans One', sans-serif;
+  color: white;
+  font-size: 50px;
+}
+
 .content p {
   text-align: justify;
 }
 
 .punchline p {
   text-align: center;
-  color: #050060;
+  color: rgba(67,65,73,0.7);
   border-bottom: none;
 }
  /* Responsive Styles */
@@ -71,4 +98,24 @@
 
 .navbar-toggle .icon-bar {
   border-bottom: solid;
+}
+
+hr {
+  width: 320px;
+}
+
+.introduction-phrase {
+  margin-top: 25px;
+}
+
+.read-more {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.read-more-btn {
+  background-color: white;
+  color: #267DFD;
+  border: 1px solid #267DFD;
+  border-radius: 5px;
 }
