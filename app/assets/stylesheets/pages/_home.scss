@@ -64,10 +64,6 @@
   font-size: 50px;
 }
 
-.content p {
-  text-align: justify;
-}
-
 .punchline p {
   text-align: center;
   color: rgba(67,65,73,0.7);
@@ -107,6 +103,7 @@ hr {
 
 .introduction-phrase {
   margin-top: 25px;
+
 }
 
 .read-more {
@@ -119,4 +116,25 @@ hr {
   color: #267DFD;
   border: 1px solid #267DFD;
   border-radius: 5px;
+}
+
+.home--section{
+  display: flex;
+  flex-flow: column nowrap;
+}
+.home--description{
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.home--content{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 50vw;
+  padding: 0 1vw;
+}
+.home--picture{
+  display: flex;
+  width: 50vw;
 }

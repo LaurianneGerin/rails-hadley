@@ -7,8 +7,8 @@
 
 <!-- Page Content -->
 <div class="container">
-  <div class="row">
-    <div class="col-lg-12 punchline">
+  <div>
+    <div class="punchline">
       <p class="introduction-phrase">
         Hadley Innovation is a research company specialized in weather insurance design.
       </p>
@@ -19,62 +19,64 @@
     </div>
   </div>
   <!-- Features Section -->
-  <div class="row">
-      <div class="col-lg-12">
+  <section class="home--section">
+      <div>
           <h2 class="page-header">Context</h2>
       </div>
-      <div class="col-md-6 content">
-        <p>Most farmers in sub-Saharan Africa practice rain-fed agriculture. Not enough rain means plants don’t produce a harvest while too much rain can kill
-          growing crops. To mitigate adverse effects of heavy rainfall or drought on crop yield, weather index insurance is an innovative risk management solution,
-          mostly intended to insure smallholders’ farmers against climate risk. The weather index insurance is based on an event’s probability to trigger a payout
-          from independent meteorological data, which both farmer and insurer have access to
-        </p>
-        <p>Yet, the poor rain gauge network in sub-Saharan Africa prevents a proper risk assessment and an accurate insurance design. If the spatial and temporal
-          variability of rainfall is not accurately estimated, only areas covered by a dense rain gauge network with long histories can benefit from insurance
-          coverage.
-        </p>
-      </div>
-      <div class="col-md-6">
-          <img class="img-responsive" src="http://img11.hostingpics.net/pics/179333context.jpg" alt="context">
-      </div>
-  </div>
-
-  <div class="row">
-      <div class="col-lg-12">
-          <h2 class="page-header">Solution</h2>
-      </div>
-      <div class="col-md-6">
-        <img class="img-responsive" src="http://img11.hostingpics.net/pics/998628solutionhadley.png" alt="">
-      </div>
-      <div class="col-md-6 content">
-        <p>Hadley Innovation overcomes the challenge of missing information by simulating realistic rainfall data, away from gauge stations. Known as <em>stochastic modeling of space-time rainfall field, </em>
-          our simulator accounts for the spatial and temporal dependence of rainfall patterns.
-        </p>
-        <p>From ground observations measurements, statistical analysis of rainfall distribution is first achieved to infer input parameters in the rainfall simulator.
-          In output, relevant information are generated at locations with no previous measurements, or where only short data series are available. Synthetic rainfall
-          data improve weather index design while lowering premiums' costs, making insurance more affordable.
-        </p>
-      </div>
-  </div>
-
-  <div class="row">
-      <div class="col-lg-12">
-          <h2 class="page-header">Vision</h2>
-      </div>
-      <div class="col-md-6 content">
-        <p>The vision of Hadley Innovation lies in allowing the 50 million smallholders farmers across sub-Saharan Africa to benefit from cheap, transparent and tailor-made
-          insurance coverage against climate risk. The rainfall model Hadley Innovation is developing represents a small part of what needs to be achieved to
-          properly design and price a weather index. Cross disciplinary collaborations from different disciplines - geostatistics, climatology, agronomy and finance
-          - are thus required to end-up with a whole product with strong value for smallholders’ farmers.
-        </p>
-        <div class="text-center read-more">
-          <a href="product" class="btn btn-default btn-submit">Read More</a>
+      <div class="home--description">
+        <div class="home--content">
+          <p>Most farmers in developing countries practice rain-fed agriculture. Not enough rain means plants don’t produce a harvest while too much rain can kill
+            growing crops. To protect against natural hazards and climate risk, farmers can insure themselves.
+          </p>
+          <p>Yet the existing network of low rain density gauges and the short historical time periods prevent a suitable risk coverage.
+          </p>
+        </div>
+        <div class="home--picture">
+            <%= image_tag "context-hadley.jpg", alt: "Problem of Hadley Innovation" %>
         </div>
       </div>
-      <div class="col-md-6">
-          <img class="img-responsive" src="http://img11.hostingpics.net/pics/126056vision.jpg" alt="">
+  </section>
+
+  <section class="home--section">
+      <div>
+          <h2 class="page-header">Solution</h2>
       </div>
-  </div>
+      <div class="home--description">
+        <div class="home--picture">
+          <%= image_tag "solution-hadley.png", alt: "Solution of Hadley Innovation" %>
+        </div>
+        <div class="home--content">
+          <p>Hadley Innovation overcomes the challenge of missing information, by simulating realistic rainfall data. Known as <em>stochastic modeling of space-time rainfall field, </em>
+            our simulator accounts for the spatial and temporal dependence of rainfall patterns.
+          </p>
+          <p>From ground observations measurements, statistical analysis of rainfall distribution is first achieved to infer input parameters in the rainfall simulator.
+            In output, relevant information are generated at locations with no previous measurements, or where only short data series are available. Synthetic rainfall
+            data improve weather index design while lowering premiums' costs, making insurance more affordable.
+          </p>
+        </div>
+      </div>
+  </section>
+
+  <section class="home--section">
+      <div>
+          <h2 class="page-header">Vision</h2>
+      </div>
+      <div class="home--description">
+        <div class="home--content">
+          <p>Allowing the 50 million smallholders farmers across sub-Saharan Africa to benefit from cheap, transparent and tailor-made
+            insurance coverage against climate risk. The model Hadley Innovation is developing represents a small part of what needs to be achieved to
+            properly design and price a weather index. Cross disciplinary collaborations from different disciplines - geostatistics, climatology, agronomy and finance
+            - are thus required to end-up with a whole product with strong value for smallholders’ farmers.
+          </p>
+          <div class="text-center read-more">
+            <a href="product" class="btn btn-default btn-submit">Read More</a>
+          </div>
+        </div>
+        <div class="home--picture">
+            <%= image_tag "vision-hadley.jpg", alt: "Vision of Hadley Innovation" %>
+        </div>
+      </div>
+  </section>
   <!-- /.row -->
   <div class="row">
   </div>
