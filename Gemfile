@@ -7,7 +7,6 @@ gem 'pg'
 gem 'figaro'
 gem 'jbuilder', '~> 2.0'
 gem 'redis'
-gem 'sqlite3'
 
 gem 'sass-rails'
 gem 'jquery-rails'
